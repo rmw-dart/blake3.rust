@@ -18,7 +18,7 @@ fi
 rm -rf *.h
 
 export RUST_BACKTRACE=1
-#cbindgen --config cbindgen.toml --output blake3.cbindgen.h
+#cbindgen --config cbindgen.toml --output h/cbindgen.h
 cargo +nightly test --features c-headers -- c_headers
 dart run ffigen
 
