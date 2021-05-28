@@ -1,5 +1,5 @@
 name: rmw
-description: blake3 for dart on rust ffi
+description: ffi for dart on rust
 version: 0.0.1
 
 environment:
