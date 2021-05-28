@@ -1,0 +1,22 @@
+name: rmw
+description: blake3 for dart on rust ffi
+version: 0.0.1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+ffigen:
+  output: 'lib/Ffi.dart'
+  name: Ffi
+  headers:
+    entry-points:
+      - 'h/blake3.h'
+      # - 'blake3.cbindgen.h'
+
+dependencies:
+  path:
+
+dev_dependencies:
+  pedantic: ^1.10.0
+  ffigen:
+

@@ -1,0 +1,21 @@
+#cargo-features = ["edition2021"]
+
+[package]
+name = "dart-ffi"
+authors = [ "rmw <i@rmw.link>" ]
+#edition = "2021"
+edition = "2018"
+version = "0.0.1"
+license = "AGPL-3.0-or-later"
+description="placeholder ; writing"
+
+[dependencies]
+blake3 = "0.3.8"
+safer-ffi = { version = "*", features = ["proc_macros"] }
+
+[lib]
+crate-type = ["cdylib","staticlib"]
+
+[features]
+c-headers = ["safer-ffi/headers"]
+

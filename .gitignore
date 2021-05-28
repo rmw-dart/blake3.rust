@@ -1,0 +1,6 @@
+.packages
+.dart_tool/
+target/
+dist/
+/ffi.so
+*.exe
